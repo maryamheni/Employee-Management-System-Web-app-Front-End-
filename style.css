@@ -1,0 +1,22 @@
+body
+{background-color: lightgray;}
+.bx{
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+.custom-nav{
+    background-color: black;
+}
+.box{
+background-image: url("https://www.moderndata.com/wp-content/uploads/2014/03/it-company-768x538.jpg");
+}
+
+
+.row-full{
+    position: relative;
+    margin-top: 10px; 
+   }
+.image-size
+{
+    height: 500px;
+    weight:300px;
+}
