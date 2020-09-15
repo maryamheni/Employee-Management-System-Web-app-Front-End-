@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>jobs list </title>
+  </head>
+  <body >
+      <!---nav-->
+      <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+        <a class="navbar-brand" href="dash.html">IT Company</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="employee-list.html">Employees<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="job-list.html">Jobs</a>
+            </li>
+    
+          </ul>
+          <form class="d-flex">
+          <div class="input-group mt-1">
+            <input type="text" class="form-control " placeholder="search" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-success" type="submit" id="button-addon2"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+          <a href="login.html" class="btn btn-sm btn-warning ml-3">Log out</a>
+
+          </div>
+        </div>
+      </nav>
+      <!--nav-->
+     <!--dashboard contents-->
+     <div class="container-fluid">
+         <div class="row mt-3">
+             <div class="col-lg-3 col-md-3">
+                 <div class="list-group small">
+                     <a href="#" class="list-group-item active "> Jobs Data</a>
+                     <a href="#" class="list-group-item "data-toggle="modal" data-target="#add_job" > Add Job </a>
+
+                     <a href="job-list.html" class="list-group-item "> View all jobs </a>
+
+                 </div>
+             </div>
+                 <div class="col-lg-9 col-md-9">
+                     <table class="table table-striped table-hover bg-white small ">
+                         <tr class="bg-secondary">
+                             <th>ID</th>
+                             <th>job Name</th>
+                             <th>Details</th>
+                             <th>Edit</th>
+                             <th>Delete</th>
+                         </tr>
+                         <tr>
+                             <td>1</td>
+                             <td>Graphic Designer</td>
+                             <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail">Details</a></td>
+                             <td><a href='#'class="btn btn-sm btn-warning" data-toggle="modal" data-target="#job_edit">Edit</a></td>
+                             <td><a href='#'class="btn btn-sm btn-danger" onclick="alert('Are you sure you want to delete \Graphic Designer\?');"> Delete</a></td>    
+                         </tr>
+                         <tr>
+                            <td>2</td>
+                            <td>Web Designer</td>
+                            <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail" >Details</a></td>
+                            <td><a href='#'class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href='#'class="btn btn-sm btn-danger">Delete</a></td>    
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Web devoloper</td>
+                            <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail">Details</a></td>
+                            <td><a href='#'class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href='#'class="btn btn-sm btn-danger" onclock="alert('Are you sure ?')">Delete</a></td>    
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Hardware engineer</td>
+                            <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail">Details</a></td>
+                            <td><a href='#'class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href='#'class="btn btn-sm btn-danger" onclock="alert('Are you sure ?')">Delete</a></td>    
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Software engineer</td>
+                            <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail">Details</a></td>
+                            <td><a href='#'class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href='#'class="btn btn-sm btn-danger" onclock="alert('Are you sure ?')">Delete</a></td>    
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Information systems manager</td>
+                            <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail">Details</a></td>
+                            <td><a href='#'class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href='#'class="btn btn-sm btn-danger" onclock="alert('Are you sure ?')">Delete</a></td>    
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Programmer</td>
+                            <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail">Details</a></td>
+                            <td><a href='#'class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href='#'class="btn btn-sm btn-danger" onclock="alert('Are you sure ?')">Delete</a></td>    
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Data analyst</td>
+                            <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail">Details</a></td>
+                            <td><a href='#'class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href='#'class="btn btn-sm btn-danger" onclock="alert('Are you sure ?')">Delete</a></td>    
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td>Systems analyst</td>
+                            <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail">Details</a></td>
+                            <td><a href='#'class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href='#'class="btn btn-sm btn-danger" onclock="alert('Are you sure ?')">Delete</a></td>    
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td>Database administrator</td>
+                            <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail">Details</a></td>
+                            <td><a href='#'class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href='#'class="btn btn-sm btn-danger" onclock="alert('Are you sure ?')">Delete</a></td>    
+                        </tr>
+
+                        <tr>
+                            <td>1<1/td>
+                            <td>Systems administrator</td>
+                            <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail">Details</a></td>
+                            <td><a href='#'class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href='#'class="btn btn-sm btn-danger" onclock="alert('Are you sure ?')">Delete</a></td>    
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td>Computer and information scientist</td>
+                            <td><a href='#'class="btn btn-sm btn-info" data-toggle="modal" data-target="#job_detail">Details</a></td>
+                            <td><a href='#'class="btn btn-sm btn-warning">Edit</a></td>
+                            <td><a href='#'class="btn btn-sm btn-danger" onclock="alert('Are you sure ?')">Delete</a></td>    
+                        </tr>
+
+                        
+
+
+                     </table>
+
+               
+             </div>
+         </div>
+
+     </div>
+     <!--dash content-->
+        <!-- add employee button-->
+  <!-- Modal -->
+  <div class="modal fade" id="add_job" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add job Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+                <input type="date" class= "form-control form-control-sm"  required>
+            </div>
+              <div class="mb-3">
+                  <input type="text" class= "form-control form-control-sm" placeholder="Job Name" required>
+            
+                <button type="submit" class="btn btn-sm btn-success btn-block ">Add New Job</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+     <!--job detail model-->
+
+     <div class="modal fade" id="job_detail" tabindex="-1" aria-labelledby="job_detail" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">employee Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             <table class="table table-bordered table-striped">
+                 <tr>
+                     <th>ID </th>
+                     <td>1</td>
+                 </tr>
+                 <tr>
+                     <th>job added date</th>
+                     <td>12/2/2019</td>
+                 </tr>
+                 <tr>
+                     <th>Name</th>
+                     <td>Graphic Designer</td>
+                 </tr>
+                 
+             </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--edit employee-->
+      <div class="modal fade" id="job_edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add employee Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                    <input type="text" class= "form-control form-control-sm" value="12/09/2019" required>
+                </div>
+                  <div class="mb-3">
+                      <input type="text" class= "form-control form-control-sm"  value="Graphic Designer" required>
+                  </div>
+                  
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-sm btn-success btn-block ">update  job</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
